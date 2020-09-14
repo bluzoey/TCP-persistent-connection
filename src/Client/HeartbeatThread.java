@@ -1,7 +1,7 @@
 package Client;
 
 
-import com.mfc.base.practice.practice5_round2.Rule.PackageRule;
+import Rule.PackageRule;
 
 import java.io.OutputStream;
 import java.net.Socket;

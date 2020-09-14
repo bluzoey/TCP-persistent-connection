@@ -1,7 +1,7 @@
 package Server;
 
 
-import com.mfc.base.practice.practice5_round2.Library.Library;
+import Library.Library;
 
 import java.io.IOException;
 import java.net.ServerSocket;

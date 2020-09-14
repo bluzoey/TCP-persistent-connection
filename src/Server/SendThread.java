@@ -1,7 +1,7 @@
 package Server;
 
 
-import com.mfc.base.practice.practice5_round2.Rule.PackageRule;
+import Rule.PackageRule;
 
 import java.io.IOException;
 import java.io.OutputStream;
