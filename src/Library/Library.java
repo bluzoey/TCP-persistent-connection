@@ -3,6 +3,7 @@ package Library;
 import java.util.ArrayList;
 
 public class Library {
+    protected static int MAX_SIZE=10;
     protected static ArrayList<Book>storage;
     protected int size;
 
@@ -23,7 +24,7 @@ public class Library {
     }
 
     public synchronized ArrayList<Integer> borrowBook(int bookId){
-        if(bookId>=0 && bookId<storage.size()) {
+        if(bookId>=0 && bookId<MAX_SIZE) {
 
            /* for (Library.Book book : storage) {
                 if (book.id == bookId) {
@@ -42,7 +43,7 @@ public class Library {
     }
 
     public synchronized ArrayList<Integer> returnBook(int bookId){
-        if(bookId<0 || bookId>=size){
+        if(bookId<0 || bookId>MAX_SIZE-1){
         }else {
 
             /*for(Library.Book book:storage) {
